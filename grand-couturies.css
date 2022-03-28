@@ -1,0 +1,57 @@
+html {
+    background-color: rgba(215, 213, 213, 0.88);
+}
+
+.brands {
+    display: grid;
+    grid-template-areas:
+        "arm giv mm"
+        "vln dior ch";
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 25px 50px;
+    padding: 15px;
+}
+
+#arm {
+    grid-area: arm;
+    width: 100%;
+}
+
+#giv {
+    grid-area: giv;
+    width: 100%;
+}
+
+#mm {
+    grid-area: mm;
+    width: 100%;
+}
+
+#dior {
+    grid-area: dior;
+    width: 100%;
+    padding: 20%;
+}
+
+#ch {
+    grid-area: ch;
+    width: 100%;
+    padding: 25%;
+}
+
+#vln {
+    grid-area: vln;
+    width: 100%;
+    padding: 15%;
+}
+
+@media only screen and (max-width: 1100px) {
+    .brands {
+        grid-template-areas:
+            "arm giv"
+            "mm vln"
+            "dior ch";
+        grid-template-columns: 1fr 1fr;
+    }
+}

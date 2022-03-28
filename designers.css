@@ -1,0 +1,77 @@
+html {
+    background-color: rgba(215, 213, 213, 0.88);
+}
+
+.design > p {
+    font-size: 1.3em;
+    font-weight: 400;
+    line-height: 1.7em;
+    text-align: justify;
+    border-top: 3px solid;
+    border-image-slice: 1;
+    margin: 0;
+    padding: 40px;
+    counter-increment: section;
+    position: relative;
+    color: black;
+}
+
+.design > p:before {
+    content: counter(section);
+    position: absolute;
+    padding: 10px;
+    height: 1em;
+    width: 1em;
+    background-color: black;
+    line-height: 1.25em;
+    font-size: 1em;
+}
+
+.design > p:nth-child(odd) {
+      border-right: 3px solid;
+      padding-left: 0;
+}
+
+.design > p:nth-child(odd):before {
+     left: 100%;
+     margin-left: -20px;
+ }
+
+.design > p:nth-child(even) {
+      border-left: 3px solid;
+      padding-right: 0;
+  }
+
+.design > p:nth-child(even):before {
+     right: 100%;
+     margin-right: -20px;
+}
+
+.design > p:first-child {
+      border-top: 0;
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+
+.design > p:last-child {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.img-l {
+    width: 350px;
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+.img-r {
+    width: 350px;
+    float: right;
+    margin: 0 0 15px 15px;
+}
+
+@media (max-width: 1100px) {
+    .info img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="gallery.css">
+    <title>Gallery</title>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to the menu"><i class="arrow up"></i></button>
+<header class="header">
+    <nav class="nav">
+        <a href="index.html" class="nav-logo">Haute Couture</a>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="grand-couturies.html" class="nav-link">Grand Couturies</a>
+            </li>
+            <li class="nav-item">
+                <a href="designers.html" class="nav-link">Designers</a>
+            </li>
+            <li class="nav-item">
+                <a href="gallery.html" class="nav-link">Gallery</a>
+            <li class="nav-item">
+                <a href="blog.html" class="nav-link">Blog</a>
+            </li>
+        </ul>
+        <div class="burger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
+<main class="main">
+    <div class="info">
+        <div class="full-img" id="fullImgBox">
+            <img src="images/1.jpg" id="fullImg" alt="no img">
+            <span class="close" onclick="closeFullImg()"></span>
+        </div>
+        <div class="img-gallery">
+            <img src="images/1.jpg" onclick="openFullImg(this.src)" alt="no img">
+            <img src="images/2.jpg" onclick="openFullImg(this.src)" alt="no img">
+            <img src="images/3.jpg" onclick="openFullImg(this.src)" alt="no img">
+            <img src="images/4.jpg" onclick="openFullImg(this.src)" alt="no img">
+            <img src="images/5.jpg" onclick="openFullImg(this.src)" alt="no img">
+            <img src="images/6.jpg" onclick="openFullImg(this.src)" alt="no img">
+            <img src="images/7.jpg" onclick="openFullImg(this.src)" alt="no img">
+            <img src="images/8.jpg" onclick="openFullImg(this.src)" alt="no img">
+            <img src="images/9.jpg" onclick="openFullImg(this.src)" alt="no img">
+            <img src="images/10.jpg" onclick="openFullImg(this.src)" alt="no img">
+            <img src="images/11.jpg" onclick="openFullImg(this.src)" alt="no img">
+            <img src="images/12.jpg" onclick="openFullImg(this.src)" alt="no img">
+        </div>
+    </div>
+    <div class="follow">
+        <h1>Follow Us</h1>
+        <a href="#"><img class="social" src="images/insta.png" alt="no img"></a>
+        <a href="#"><img class="social" src="images/telegram.png" alt="no img"></a>
+        <a href="#"><img class="social" src="images/vk.png" alt="no img"></a>
+    </div>
+    <div class="login">
+        <h1>Log In</h1>
+        <label for="name" id="log-in"></label>
+        <p>Username</p>
+        <input type="text" placeholder="Enter Username" id="name" required>
+        <label for="psw"></label>
+        <p>Password</p>
+        <input type="password" placeholder="Enter Password" id="psw" required>
+        <button id="submit">Login</button>
+    </div>
+</main>
+<script src="global.js"></script>
+</body>
+</html>
